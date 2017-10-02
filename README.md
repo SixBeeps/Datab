@@ -14,6 +14,8 @@ Datab works a lot like a 2D array or an Excel spreadsheet. Labels are the titles
 
 `GetLabel(int at)` as string: Returns the name of the label at position `at`. If you ran the example for `SetLabel()` above and called `GetLabel(0)`, it would return "Username".
 
+`GetLabels()` as List<string>: Get a list of all the labels. Pretty straightforward.
+
 `GetLabelID(string name)`as string: Finds the position of a label with the name of `name`. Continuing the above examples, `GetLabelID("Username")` would return `"0"`.
 
 `GetContent(int labelID, int entry)` as string: Get the specific item of an entry `entry` under the label `labelID`.
