@@ -33,6 +33,10 @@ namespace Datab
         {
             return Labels[at];
         }
+        public List<string> GetLabels()
+        {
+            return Labels;
+        }
         public int GetLabelID(string name)
         {
             int temp = 0;
