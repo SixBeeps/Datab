@@ -13,9 +13,9 @@ namespace DatabTesting
         public static void Main(string[] args)
         {
             database.Init();
-            while(database == null)
+            while(database == null) //Wait for the database to be initialized before doing anything
             {
-                GC.Collect();
+                GC.Collect(); //Anti-crashing
             }
             database.SetLabel(5, "Username");
             database.SetLabel(6, "Password");
@@ -25,7 +25,7 @@ namespace DatabTesting
             OutputAllContent();
         }
 
-        static void OutputAllContent()
+        static void OutputAllContent() //Prints everything - even the labels - to the screen.
         {
             foreach(List<string> secondaryList in database.GetAllContent())
             {
